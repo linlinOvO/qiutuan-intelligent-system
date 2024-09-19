@@ -1,0 +1,235 @@
+.App {
+    text-align: center;
+}
+.root{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.app-body{
+    float: left;
+    width: 90%;
+    height: calc(100% - 40px);
+    transition: .3s;
+    overflow: hidden;
+}
+
+.app-body1{
+    float: left;
+    width: 97%;
+    height: calc(100% - 40px);
+    transition: .3s;
+}
+
+.app-body-header-choice {
+    background-color: #293846;
+    border-right: solid 1px #293846;
+    cursor: pointer;
+    float: left;
+    transition: all .3s ease-out 0s;
+    padding: 0 15px;
+}
+
+.app-body-header-choice div {
+    color: #d0cdcd;
+    font: 13px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+    height: 31px;
+    padding-top: 9px;
+    float: left;
+}
+
+.app-body-header-choice1 {
+    background-color: transparent;
+    border-right: solid 1px #eee;
+    cursor: pointer;
+    float: left;
+    transition: all .3s ease-out 0s;
+    padding: 0 15px;
+}
+
+.app-body-header-choice1 div{
+    color: #999;
+    font: 13px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+    height: 31px;
+    padding-top: 9px;
+    float: left;
+}
+
+.app-body-header-choice:hover{
+    background-color: #293846;
+    color: #fff;
+}
+
+.app-body-header-choice1:hover{
+    background-color: #f2f2f2;
+    color: #777;
+}
+
+.app-body-header-circle{
+    color: #ccc;
+    display: inline-block;
+    font: normal normal normal 20px FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    margin-left: 5px;
+    float: left;
+    padding-top: 5px;
+}
+
+.app-body-header-circle:before{
+    content: "\2716";
+}
+
+.app-body-header{
+    height: 40px;
+    width: calc(100% - 10px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 10px;
+    border-bottom: solid 2px #2f4050;
+}
+
+.app-body-content {
+    background-color: #F1F4F5;
+    height: calc(100% - 42px);
+    width: calc(100% - 0px);
+    min-height: 618px;
+    overflow: hidden;
+    padding: 0;
+}
+
+#root {
+    height: 100vh;
+    overflow: auto;
+    min-height: 333px;
+    min-width: 1105px;
+}
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* 设置浮动 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37474F;
+}
+
+.trans {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    /* 设置浮动 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #37474F;
+}
+
+span {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+}
+
+.trans::after {
+    content: "";
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background: #37474F;
+    /* 添加边框 */
+    border: 4px solid #3ff9dc;
+    /* 初始化位置 */
+    transform: rotate(45deg);
+    /* 添加动画、动画时间和样式 */
+    animation: rotate1 3s ease-in-out infinite alternate;
+}
+
+.trans::before {
+    content: "";
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    /* 添加边框 */
+    border: 4px solid #ffab91;
+    /* 初始化位置 */
+    transform: rotate(-90deg);
+    /* 添加动画、动画时间和样式 */
+    animation: rotate2 3s ease-in-out infinite alternate;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

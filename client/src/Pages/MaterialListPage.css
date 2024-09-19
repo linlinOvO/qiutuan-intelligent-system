@@ -1,0 +1,635 @@
+.materialListPage {
+    /* background-color: #c0d8ce; */
+
+
+    height: 100%;
+    width: 100%;
+    float: left;
+    transition: .3s;
+    overflow: auto;
+}
+.materialListPage_tablePart {
+    width: 100%;
+    height: calc(100% - 260px);
+    float: left;
+}
+
+.ml_pagination {
+    width: calc(100% - 24px);
+    margin-left: 12px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.materialListPage_search {
+    width: calc(100% - 24px);
+    margin: 12px;
+    height: 150px;
+    position: relative;
+}
+
+.ml_search_line_button {
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    font-weight: bold;
+    font-size: 16px;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.ml_search_line {
+    width: 100%;
+    height: 42px;
+    padding-top: 11px;
+}
+
+.ml_search_name{
+    background: silver;
+    width: 70px;
+    font-family: Arial, serif;
+    height: 30px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    float: left;
+    border-radius: 10px;
+}
+
+.ml_search_line input
+{
+    border: 1px solid black;
+    height: 26px;
+    font-size: 15px;
+    margin-right: 10px;
+    float: left;
+    width: 150px;
+}
+
+.ml_search_line .react-datepicker-popper,
+.ml_search_line .react-datepicker__input-container,
+.ml_search_line .react-datepicker-wrapper{
+    height: 26px;
+    font-size: 15px;
+    margin-right: 10px;
+    float: left;
+    width: 150px;
+}
+
+
+.ml_search_line select{
+    border: 1px solid black;
+    height: 28px;
+    width: 100px;
+    font-size: 15px;
+    margin-right: 10px;
+    float: left;
+}
+
+.ml_search_symbol {
+    width: 10px;
+    font-family: Arial, serif;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    float: left;
+}
+
+.materialListPage_functions {
+    width: calc(100% - 24px);
+    margin-left: 12px;
+    height: 40px;
+    float: left;
+}
+
+.materialListPage_materialType {
+    width: calc(100% - 36px);
+    margin-left: 12px;
+    height: 23px;
+    float: left;
+    padding: 12px 12px 12px 0;
+    border-bottom: 1px solid #273f35;
+    margin-bottom: 15px;
+}
+
+.materialListPage_materialList {
+    width: 98%;
+    margin: 1%;
+    height: 70%;
+    border: 1px #3a5f50 solid;
+    position: relative;
+    transition: .3s;
+    float: left;
+    overflow: hidden;
+}
+
+.materialListPage_functions button {
+    font-size: 14px;
+    height: 90%;
+    width: 80px;
+    float: left;
+    cursor: pointer;
+    text-align:center; /* center horizontally */
+    vertical-align:middle; /* center vertically */
+    margin-right: 2%;
+    border-radius: 5px;
+    border: 1px solid #c0d8ce;
+}
+
+.Button1 {
+    background-color: #66619e;
+    color: #eff5f3;
+}
+
+.Button2 {
+    background-color: #618a9e;
+    color: #eff5f3;
+}
+
+.Button3 {
+    background-color: #999e61;
+    color: #eff5f3;
+}
+
+div.tablePart {
+    margin: 0;
+    float: left;
+    line-height: 25px;
+    padding: 5px 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #273f35;
+    height: 25px;
+    color: #eff5f3;
+    font-weight: bold;
+    width: 56px;
+    vertical-align: middle;
+    font-size: 14px;
+    border-radius: 4px 4px 0 0;
+}
+
+.tablePart1 {
+    background-color: white;
+    color: #273f35;
+    margin: 0;
+    float: left;
+    line-height: 25px;
+    padding: 5px 15px;
+    text-align: center;
+    cursor: pointer;
+    height: 25px;
+    font-weight: bold;
+    width: 56px;
+    vertical-align: middle;
+    font-size: 14px;
+    border-radius: 4px 4px 0 0;
+}
+
+.tablePart1:hover {
+    background-color: #273f35;
+    color: #eff5f3;
+}
+
+.materialList_first {
+    width: 585px;
+    height: 100%;
+    float: left;
+    overflow: auto;
+    margin: 0;
+}
+
+.materialList_second {
+    width: 585px;
+    height: 100%;
+    float: left;
+    overflow: auto;
+    margin: 0;
+}
+
+/*.materialListPage_materialList table {*/
+/*    display: block;*/
+/*    border: 0;*/
+/*    border-spacing: 0;*/
+/*    float: left;*/
+/*    margin: 0;*/
+/*}*/
+
+
+/*.materialListPage_materialList thead {*/
+/*    top: 0;*/
+/*}*/
+
+/*.materialListPage_materialList table thead,*/
+/*tbody tr {*/
+/*    display: table;*/
+/*    width: 200px;*/
+/*    table-layout: fixed;*/
+/*}*/
+
+/*th.tablePart {*/
+/*    background: #619e85;*/
+/*    width: 140px;*/
+/*    border: 1px solid black;*/
+/*    font-size: 17px;*/
+/*    height: 30px;*/
+/*}*/
+
+/*.materialList_body table tbody td {*/
+/*    width: 140px;*/
+/*    text-align: center;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*    height: 40px;*/
+/*    background: #c0d8ce;*/
+/*}*/
+
+/*th.checkBox {*/
+/*    width: 45px;*/
+/*    height: 32px;*/
+/*    background: #619e85;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*.materialListPage_materialList td.checkBox {*/
+/*    width: 45px;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*th.state {*/
+/*    width: 70px;*/
+/*    background: #619e85;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*.materialListPage_materialList td.state {*/
+/*    width: 70px;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*th.check {*/
+/*    width: 100px;*/
+/*    background: #619e85;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*.materialListPage_materialList td.check {*/
+/*    width: 100px;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*th.id {*/
+/*    width: 85px;*/
+/*    background: #619e85;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*.materialListPage_materialList td.id {*/
+/*    width: 85px;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*th.name {*/
+/*    width: 265px;*/
+/*    background: #619e85;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*}*/
+
+/*.materialListPage_materialList td.name {*/
+/*    width: 265px;*/
+/*    border: 1px solid black;*/
+/*    font-size: max(18px, 1.2vw);*/
+/*    height: 40px;*/
+/*}*/
+
+/*td {*/
+/*    text-align: center;*/
+/*}*/
+
+div.state1 {
+    background-color: #9e617a;
+    font-size: 14px;
+    width: 50px;
+    font-weight: bold;
+    color: #eff5f3;
+    text-align: center;
+}
+
+div.state2 {
+    background-color: #6b9e61;
+    font-size: 14px;
+    width: 50px;
+    font-weight: bold;
+    color: #eff5f3;
+    text-align: center;
+}
+
+/*input[type=checkbox].checkBox {*/
+/*    transform: scale(1.5);*/
+/*}*/
+
+
+/*.operation {*/
+/*    width: 45px;*/
+/*    height: 25px;*/
+/*    border: 1px solid black;*/
+/*    font-size: 14px;*/
+/*    background-color: #618a9e;*/
+/*    color: #dfece7;*/
+/*}*/
+
+/*.materialList_head {*/
+/*    width: 100%;*/
+/*    height: 36px;*/
+/*    float: left;*/
+/*    overflow: hidden;*/
+/*    margin: 0;*/
+/*    transition: .3s;*/
+/*}*/
+
+/*.materialList_body {*/
+/*    width: 100%;*/
+/*    height: calc(100% - 36px);*/
+/*    float: left;*/
+/*    overflow: auto;*/
+/*    margin: 0;*/
+/*    transition: .3s;*/
+/*}*/
+
+/*.materialList_fixed {*/
+/*    width: 585px;*/
+/*    float: left;*/
+/*    overflow: hidden;*/
+/*    margin: 0;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    z-index: 10;*/
+/*}*/
+
+/*.materialList_fixed_head {*/
+/*    width: 100%;*/
+/*    height: 36px;*/
+/*    float: left;*/
+/*    overflow: hidden;*/
+/*    margin: 0;*/
+/*}*/
+
+/*.materialList_fixed_body {*/
+/*    width: 100%;*/
+/*    height: calc(100% - 36px);*/
+/*    float: left;*/
+/*    overflow: hidden;*/
+/*    margin: 0;*/
+/*}*/
+
+
+.ml-test1{
+    float: left;
+    height: calc(100% - 63px);
+    width: calc(100% - 24px);
+    margin-left: 12px;
+    overflow: scroll;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.ml-test1 table{
+    border-collapse: collapse;
+    width: 1200px;
+    height: 100%;
+    background: white;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+
+.ml-test1 table thead tr th,
+.ml-test1 table thead tr td{
+    min-width: 65px;
+    height: 28px;
+    border: 1px solid black;
+    background: white;
+    border-left: 0;
+    text-align: left;
+    padding: 5px 0 5px 15px;
+}
+
+.ml-test1 table thead tr th {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+    background-color: #dedddd;
+}
+
+.ml-test1 table thead th:first-child,
+.ml-test1 table thead td:first-child{
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 0 0 1px black;
+}
+
+.ml-test1 table thead td:nth-child(2),
+.ml-test1 table thead th:nth-child(2){
+    left: 52px;
+    z-index: 1;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    box-shadow: 0 0 0 1px black;
+}
+
+.ml-test1 table thead td:nth-child(3),
+.ml-test1 table thead th:nth-child(3){
+    left: 133px;
+    z-index: 1;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    box-shadow: 0 0 0 1px black;
+}
+
+.ml-test1 table thead td:nth-child(4),
+.ml-test1 table thead th:nth-child(4){
+    left: 214px;
+    z-index: 1;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    box-shadow: 0 0 0 1px black, 10px 1px 8px rgba(0,0,0,.08);
+}
+
+.ml-test1 table thead th:last-child,
+.ml-test1 table thead td:last-child{
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 0 0 1px black;
+}
+
+.ml-test1 table thead th:first-child,
+.ml-test1 table thead th:nth-child(1),
+.ml-test1 table thead th:nth-child(2),
+.ml-test1 table thead th:nth-child(3),
+.ml-test1 table thead th:nth-child(4),
+.ml-test1 table thead th:last-child{
+    z-index: 2;
+}
+
+.ml-test1 table thead th.ml_checkbox,
+.ml-test1 table thead td.ml_checkbox{
+    min-width: 36px;
+}
+
+.ml_checkbox input{
+    width: 18px;
+    height: 18px;
+}
+
+.ml-test1 table thead th.ml_name,
+.ml-test1 table thead td.ml_name{
+    min-width: 150px;
+}
+
+.ml_table_detail {
+    background-color: #6b7db6;
+    font-size: 14px;
+    width: 50px;
+    font-weight: bold;
+    color: #eff5f3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ml_pagination_pagePart {
+    height: 30px;
+    float: left;
+}
+
+.ml_pagination_less {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 26px;
+    float: left;
+    cursor: pointer;
+}
+
+.ml_pagination_less:hover{
+    color: #009688;
+}
+
+.ml_pagination_more {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 26px;
+    float: left;
+    cursor: pointer;
+}
+
+.ml_pagination_more:hover{
+    color: #009688;
+}
+
+.ml_pagination_focus {
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 5px 0 5px;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    background-color: #009688;
+    color: white;
+    cursor: pointer;
+}
+
+.ml_pagination_unFocus {
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 5px 0 5px;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+.ml_pagination_skip {
+    height: 30px;
+    width: 172px;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+.ml_pagination_skip input {
+    height: 25px;
+    width: 40px;
+    border: 1px solid black;
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ml_pagination_skip button {
+    height: 28px;
+    width: 50px;
+    font-size: 14px;
+    border: 1px solid black;
+    margin: 0 0 0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ml_pagination_number {
+    height: 30px;
+    width: 62px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 30px;
+    float: left;
+}
+
+.ml_pagination_select {
+    height: 28px;
+    width: 100px;
+    font-size: 14px;
+    border: 1px solid black;
+    margin: 5px 0 0 10px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}

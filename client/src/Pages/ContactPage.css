@@ -1,0 +1,46 @@
+.contactPage{
+    margin: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+}
+
+.cp_part{
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
+    Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.cp_textPart{
+    margin-top: 20px;
+    width: 300px;
+    height: 130px;
+    margin-left: 80px;
+}
+
+.cp_line{
+    height: 24px;
+    width: 100%;
+}
+
+.cp_icon{
+    float: left;
+    height: 100%;
+    width: 40px;
+}
+
+.cp_text{
+    float: left;
+    height: 100%;
+    width: 260px;
+    font-size: 14px;
+}

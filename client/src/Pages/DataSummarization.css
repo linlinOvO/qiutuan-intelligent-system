@@ -1,0 +1,9 @@
+.ds-part {
+    margin: 5px;
+    height: 224px;
+    width: 580px;
+    border-radius: 10px;
+    background-color: #2d3661;
+    float: left;
+    padding: 10px;
+}

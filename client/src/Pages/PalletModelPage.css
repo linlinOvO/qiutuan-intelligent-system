@@ -1,0 +1,737 @@
+.palletModelPage {
+    height: 100%;
+    width: 100%;
+    float: left;
+    transition: .3s;
+    overflow: auto;
+}
+
+.palletModelPage_1 {
+    background-color: #c0d8ce;
+    height: 182%;
+    width: 98%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 12px;
+    transition: .3s;
+}
+
+.palletModelPage_buttonPart {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.palletModelPage_calculatePart {
+    margin-top: 12px;
+    margin-right: 12px;
+    width: calc(100% - 350px);
+    height: 570px;
+    transition: .3s;
+    float: left;
+}
+
+.palletModelPage_resultPart {
+    margin-top: 12px;
+    width: 338px;
+    height: 570px;
+    float: left;
+    overflow: hidden;
+}
+
+.palletModelPage_conditionPart {
+    width: 100%;
+    height: 150px;
+    float: left;
+    transition: .3s;
+}
+
+.palletModelPage_materialPart {
+    width: 100%;
+    height: 400px;
+    float: left;
+    transition: .3s;
+}
+
+button.palletModelPage_buttonPart_choose {
+    float: left;
+    background-color: #4f67b0;
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    font-size: max(16px, 1.1vw);
+    color: #f2f5f5;
+    margin-left: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.palletModelPage_buttonPart_choose:hover {
+    background-color: #6b7db6;
+}
+
+button.palletModelPage_buttonPart_add {
+    float: left;
+    background-color: #4fb067;
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    font-size: max(16px, 1.1vw);
+    color: #f2f5f5;
+    margin-left: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.palletModelPage_buttonPart_add:hover {
+    background-color: #64b978;
+}
+
+div.palletModelPage_buttonPart_1 {
+    float: left;
+    margin-left: 20px;
+}
+
+div.palletModelPage_buttonPart_2 {
+    float: left;
+}
+
+label.palletModelPage_buttonPart_1 {
+    float: left;
+    background-color: #f2f5f5;
+    border: 1px black solid;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 100px;
+    height: 30px;
+}
+
+label.palletModelPage_buttonPart_1:hover {
+    color: #6180ce;
+}
+
+label.palletModelPage_buttonPart_2 {
+    float: left;
+    background-color: #6180ce;
+    color: #f2f5f5;
+    border: 1px black solid;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+
+label.palletModelPage_buttonPart_3 {
+    float: left;
+    background-color: #f2f5f5;
+    width: calc(50% - 2px);
+    height: 100%;
+    border: 1px black solid;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: max(16px, 1.1vw);
+    cursor: pointer;
+}
+
+label.palletModelPage_buttonPart_3:hover {
+    color: #6180ce;
+}
+
+label.palletModelPage_buttonPart_4 {
+    float: left;
+    background-color: #6180ce;
+    color: #f2f5f5;
+    width: calc(50% - 2px);
+    height: 100%;
+    border: 1px black solid;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: max(16px, 1.1vw);
+    cursor: pointer;
+}
+
+.palletModelPage_conditionPart_title {
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 12px;
+    width: calc(100% - 12px);
+    font-weight: bold;
+    font-size: 18px;
+    transition: .3s;
+}
+
+
+.palletModelPage_conditionPart_table {
+    height: 94px;
+    padding-top: 10px;
+    width: 100%;
+    transition: .3s;
+}
+
+.palletModelPage_conditionPart_table table {
+    border-collapse: collapse;
+    background: white;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+.palletModelPage_conditionPart_table th {
+    width: calc(100% / 6 - 2px);
+    height: 32px;
+    padding: 8px 0 0 0;
+    display: table;
+    float: left;
+    border: 1px solid black;
+    transition: .3s;
+}
+
+.palletModelPage_conditionPart_table td {
+    width: calc(100% / 6 - 2px);
+    height: 32px;
+    padding: 8px 0 0 0;
+    display: table;
+    float: left;
+    border: 1px solid black;
+    transition: .3s;
+    text-align: center;
+}
+
+input.first {
+    margin-left: 2px;
+    width: calc(100% - 10px);
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.palletModelPage_materialPart_title {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 12px;
+    width: calc(100% - 12px);
+    font-weight: bold;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.palletModelPage_materialPart_table {
+    height: calc(100% - 40px);
+    padding: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .3s;
+    position: relative;
+    border: 1px solid black;
+}
+
+.palletModelPage_materialPart_table1 {
+    height: calc(100% - 20px);
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    width: 261px;
+}
+
+.palletModelPage_materialPart_table2 {
+    height: 100%;
+    float: left;
+    width: 100%;
+    transition: .3s;
+    overflow: auto;
+    background: white;
+}
+
+.palletModelPage_materialPart_table2 table{
+    border-collapse: collapse;
+    width: 1200px;
+    height: 100%;
+    background: white;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+.palletModelPage_materialPart_table2 table thead tr th,
+.palletModelPage_materialPart_table2 table thead tr td{
+    min-width: 65px;
+    height: 28px;
+    border: 1px solid black;
+    background: white;
+    border-left: 0;
+    text-align: left;
+    padding: 5px 0 5px 15px;
+}
+
+.palletModelPage_materialPart_table2 table thead tr th {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+    background-color: #dedddd;
+}
+
+.palletModelPage_materialPart_table2 table thead th:first-child,
+.palletModelPage_materialPart_table2 table thead td:first-child{
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 0 0 1px black;
+}
+
+.palletModelPage_materialPart_table2 table thead td:nth-child(2),
+.palletModelPage_materialPart_table2 table thead th:nth-child(2){
+    left: 134px;
+    z-index: 1;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    box-shadow: 0 0 0 1px black;
+}
+
+
+.palletModelPage_materialPart_table2 table thead th:last-child,
+.palletModelPage_materialPart_table2 table thead td:last-child{
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 0 0 1px black;
+}
+
+.palletModelPage_materialPart_table2 table thead th:first-child,
+.palletModelPage_materialPart_table2 table thead th:nth-child(1),
+.palletModelPage_materialPart_table2 table thead th:nth-child(2),
+.palletModelPage_materialPart_table2 table thead th:last-child{
+    z-index: 2;
+}
+
+.palletModelPage_materialPart_table3 {
+    height: calc(100% - 20px);
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    width: 135px;
+}
+
+.palletModelPage_materialPart_table1_head {
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    overflow: hidden;
+}
+/**
+.table1_head_name {
+    height: 31px;
+    width: 148px;
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding-top: 9px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background: #c0d8d0;
+}
+
+.table1_head_type {
+    margin: 0;
+    height: 32px;
+    width: 109px;
+    float: left;
+    text-align: center;
+    padding-top: 8px;
+    background: #c0d8d0;
+}
+
+
+ */
+.palletModelPage_materialPart_table1_body {
+    width: 100%;
+    height: calc(100% - 42px);
+    text-align: center;
+    border-top: none;
+    float: left;
+    overflow: hidden;
+}
+/**
+th.table1_body_name{
+    width: 148px;
+    border: 1px solid black;
+    border-left: 0;
+    padding-top: 8px;
+}
+
+.table1_body_name {
+    height: 35px;
+    width: 148px;
+    float: left;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.table1_body_type {
+    margin: 0;
+    height: 35px;
+    width: 109px;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+ */
+
+.palletModelPage_materialPart_table3_head {
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.palletModelPage_materialPart_table3_body {
+    width: 100%;
+    height: calc(100% - 42px);
+    text-align: center;
+    border-top: none;
+    float: left;
+    overflow: hidden;
+}
+
+.palletModelPage_materialPart_table input {
+    width: 100px;
+    height: 19px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.palletModelPage_materialPart_table table {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+}
+
+.palletModelPage_materialPart_table table thead
+{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-right: 1px solid black;
+}
+
+.palletModelPage_materialPart_table table tbody
+{
+    width: 100%;
+    table-layout: fixed;
+    border-right: 1px solid black;
+}
+
+
+.palletModelPage_materialPart_table table thead th {
+    width: 160px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 38px;
+    background: #c0d8d0;
+}
+
+.palletModelPage_materialPart_table table tbody td {
+    width: 160px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    height: 48px;
+    background-color: #a0c5b6;
+}
+
+thead tr th.table1_body_name,
+tbody tr td.table1_body_name{
+    width: 118px;
+    border-left: 1px solid black;
+}
+
+thead tr th.table1_body_type,
+tbody tr td.table1_body_type{
+    width: 136px;
+}
+
+.palletModelPage_resultPart_title {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 12px;
+    width: 326px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.palletModelPage_resultPart_body {
+    background-color: white;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.palletModelPage_resultPart_body_text1 {
+    width: calc(25% - 10px);
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 10px;
+    float: left;
+    color: #6180ce;
+    cursor: pointer;
+}
+
+.palletModelPage_resultPart_body_text2 {
+    width: calc(25% - 10px);
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.palletModelPage_resultPart_body_table {
+    width: 316px;
+    height: calc(100% - 72px);
+    margin: 10px;
+    float: left;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.palletModelPage_resultPart_body_table table {
+    border-collapse: collapse;
+
+}
+
+.palletModelPage_resultPart_body_table td {
+    padding: 10px;
+    width: 158px;
+    text-align: left;
+    border-bottom: 1px solid black;
+
+}
+
+.palletModelPage_resultPart_body_table th {
+    padding: 5px;
+    width: 158px;
+    text-align: left;
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+}
+
+.palletModelPage-popup-box_body {
+    padding-top: 30px;
+    overflow: auto;
+    background-color: white;
+    height: 670px;
+    width: 100%;
+}
+
+.palletModelPage-popup-box_body .materialListPage_tablePart .materialListPage_materialList {
+    width: 98%;
+}
+
+.palletModelPage-popup-box_body .materialList_fixed_body {
+    height: calc(100% - 36px - 14px);
+}
+
+.palletModelPage-popup-box_body .materialList_fixed_head {
+    height: 36px;
+}
+
+.palletModelPage-popup-box_body .materialList_head {
+    height: 36px;
+    width: 100%;
+}
+
+.palletModelPage-popup-box_body .materialList_body {
+    height: calc(100% - 36px);
+    width: 100%;
+}
+
+.palletModelPage-popup-box_body .materialList_fixed {
+    height: 100%;
+}
+
+
+button.palletModelPage-popup-box_button {
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    background-color: #618a9e;
+    cursor: pointer;
+}
+
+.palletModelPage .box {
+    padding: 0;
+}
+
+.palletModelPage_materialPart_title_category {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 6px;
+    width: calc(100% - 6px);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.palletModelPage_materialPart_table_category {
+    height: calc(100% - 40px);
+    padding: 0;
+    width: calc(100% - 2px);
+    font-weight: bold;
+    font-size: 18px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.palletModelPage_category_left {
+    float: left;
+    width: 49%;
+    height: 49%;
+    margin-bottom: 1%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.palletModelPage_category_right {
+    float: right;
+    width: 49%;
+    height: 49%;
+    margin-bottom: 1%;
+    overflow: hidden;
+}
+
+.palletModelPage_materialPart_table_category table thead,
+.palletModelPage_materialPart_table_category table tbody {
+    width: calc(100% - 2px);
+}
+
+.palletModelPage_materialPart_table_category table {
+    display: block;
+    border-spacing: 0;
+}
+
+.palletModelPage_materialPart_table_category table thead
+{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    position: sticky;
+    top: 0;
+}
+
+.palletModelPage_materialPart_table_category table tbody
+{
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.palletModelPage_materialPart_table_category table thead th {
+    height: 38px;
+    text-align: center;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    background-color: white;
+}
+
+.palletModelPage_materialPart_table_category table tbody td {
+    border-top: 0;
+    height: 48px;
+    text-align: center;
+}
+
+th.category_id {
+    width: 94px;
+    border: 1px solid black;
+    height: 38px;
+}
+
+th.category_name {
+    width: 167px;
+    border: 1px solid black;
+    border-left: 0;
+    height: 38px;
+}
+
+th.category_input {
+    width: 123px;
+    border: 1px solid black;
+    border-left: 0;
+    height: 38px;
+    padding: 0;
+}
+
+td.category_id {
+    width: 94px;
+    border: 1px solid black;
+    height: 38px;
+}
+
+td.category_name {
+    width: 167px;
+    border: 1px solid black;
+    border-left: 0;
+    height: 38px;
+}
+
+td.category_input {
+    width: 123px;
+    border: 1px solid black;
+    border-left: 0;
+    height: 38px;
+    padding: 0;
+}
+
+td.category_input input {
+    width: 90px;
+    height: 20px;
+    font-size: 13px;
+    text-align: center;
+    border: black 1px solid;
+}
+
+.palletModelPage_chart2 {
+    margin: 12px;
+    width: 42%;
+    height: 16%;
+    float: left;
+}
+
+.palletModelPage_chart {
+    margin-top: 20px;
+    width: 50%;
+    height: 280px;
+    float: left;
+}
+
+.palletModelPage_chart1 {
+
+    width: 355px;
+    height: 224px;
+    float: left;
+}

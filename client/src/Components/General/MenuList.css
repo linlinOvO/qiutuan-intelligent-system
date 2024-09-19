@@ -1,0 +1,134 @@
+.menuList {
+    background-color: rgb(38, 50, 56);
+    width: 10%;
+    height: calc(100% - 40px);
+    color: #eff5f3;
+    transition: .3s;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menuList1 {
+    background-color: rgb(38, 50, 56);
+    width: 3%;
+    min-height: calc(100% - 40px);
+    color: #eff5f3;
+    transition: .3s;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menuList_title {
+    font-size: 16px;
+    color: #eff5f3;
+    height: 10px;
+    width: 60px;
+    margin-left: 25px;
+    margin-top: 13px;
+    float: left;
+    font-family: "Arial Rounded MT Bold", system-ui;
+
+}
+
+.menuList_button {
+    height: 20px;
+    margin-top: 10px;
+    padding: 0;
+    border: 0;
+    float: right;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menuList_button1 {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 1.5vw;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
+    float: right;
+    width: 30px;
+}
+
+.menuList_list {
+    height: 90.6%;
+    float: left;
+}
+
+.menuList_choice {
+    height: 32px;
+    width: 100%;
+    padding-top: 14px;
+    cursor: pointer;
+    float: left;
+}
+
+.menuList_choice:hover {
+    background-color: #293846;
+}
+
+.menuList_choice1 {
+    width: 100%;
+    transition: .3s;
+    height: 46px;
+    cursor: pointer;
+}
+
+.drop-down{
+    border-left: 2px solid #6180ce;
+    width: calc(100% - 2px);
+    transition: .3s;
+    float: left;
+    height: auto;
+}
+
+.submenu{
+    border-left: 2px solid #6180ce;
+    width: calc(100% - 47px);
+    text-align: left;
+    float: left;
+    padding-left: 45px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submenu :hover{
+    background-color: #293846;
+}
+
+.subChoice{
+    height: 30px;
+    font-size: 15px;
+    font-family: "Arial Rounded MT Bold", system-ui;
+}
+
+.menuList_choice_words {
+    float: left;
+    font-size: 16px;
+    height: 100%;
+    width: 70%;
+    font-family: "Arial Rounded MT Bold", system-ui;
+}
+
+.menuList div.icon {
+    margin-left: 4.63%;
+    float: left;
+    width: 10%;
+}
+
+.menuList1 div.icon {
+    margin-left: 4.63%;
+    float: left;
+    width: 95.57%;
+}
+
+img.icon {
+    padding-top: 6.67%;
+    height: 93.33%;
+    width: 68.18%;
+}
